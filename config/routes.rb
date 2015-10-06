@@ -58,7 +58,10 @@ Rickbox::Application.routes.draw do
   resources :films
   resources :users
   resources :rentals
+  resources :sessions
 
   get '/sign_up', to: 'users#new', as: 'sign_up'
+  get '/sign_in', to: 'sessions#new', as: 'sign_in'
+
   get '/sort_column', to: 'films#sort_column'
 end
