@@ -3,6 +3,6 @@
   <td><%= film.title %></td>
   <td><%= film.rating %></td>
   <td><%= film.genre %></td>
-  <td><%= film.available? %></td>
+  <td><%= film.available ? link_to('Rent', root_path) : 'Unavailable' %></td>
 </tr>
 <% end %>

@@ -1,1 +1,1 @@
-$('tbody').html("<%= render 'film_list' %>")
+$('tbody').html("<%=j render 'film_list' %>")
