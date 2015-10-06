@@ -58,4 +58,6 @@ Rickbox::Application.routes.draw do
   resources :films
   resources :users
   resources :rentals
+
+  get '/sort_column', to: 'films#sort_column'
 end

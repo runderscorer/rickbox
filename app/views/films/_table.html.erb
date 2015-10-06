@@ -1,0 +1,20 @@
+<table class='table'>
+  <thead>
+    <tr>
+      <th name='title'>Title</th>
+      <th name='rating'>Rating</th>
+      <th name='genre'>Genre</th>
+      <th name='available'>Available?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @films.each do |film| %>
+    <tr>
+      <td><%= film.title %></td>
+      <td><%= film.rating %></td>
+      <td><%= film.genre %></td>
+      <td><%= film.available? %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
