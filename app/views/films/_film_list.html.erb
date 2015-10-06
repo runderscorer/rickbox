@@ -1,0 +1,8 @@
+<% @films.each do |film| %>
+<tr>
+  <td><%= film.title %></td>
+  <td><%= film.rating %></td>
+  <td><%= film.genre %></td>
+  <td><%= film.available? %></td>
+</tr>
+<% end %>

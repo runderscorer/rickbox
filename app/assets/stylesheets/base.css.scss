@@ -1,0 +1,17 @@
+th.asc::after {
+  content: ' (asc)';
+  font-size: .8em;
+}
+
+th.desc::after {
+  content: ' (desc)';
+  font-size: .8em;
+}
+
+th {
+  width: 25%;
+}
+
+th:hover {
+  cursor: pointer;
+}

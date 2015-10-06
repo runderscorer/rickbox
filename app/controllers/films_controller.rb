@@ -5,8 +5,12 @@ class FilmsController < ApplicationController
   end
 
   def sort_column
-    @films = Film.all.sort_by {|film| film.send(params[:column])}
-
+    if params[:ascending] == 'false'
+      @films = Film.all.sort_by {|film| film.send(params[:column])}.reverse
+    else
+      @films = Film.all.sort_by {|film| film.send(params[:column])}
+    end
+        
     respond_to do |format|
       format.js
     end

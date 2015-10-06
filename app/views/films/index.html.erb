@@ -1,3 +1,15 @@
 <h2>Films</h2>
 
-<%= render 'table' %>
+<table class='table'>
+  <thead>
+    <tr>
+      <th name='title'>Title</th>
+      <th name='rating'>Rating</th>
+      <th name='genre'>Genre</th>
+      <th name='available'>Available?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render 'film_list' %>
+  </tbody>
+</table>

@@ -1,1 +1,1 @@
-$('table').html("<%= render 'table' %>")
+$('tbody').html("<%= render 'film_list' %>")
