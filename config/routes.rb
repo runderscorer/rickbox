@@ -53,4 +53,9 @@ Rickbox::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root 'films#index'
+
+  resources :films
+  resources :users
+  resources :rentals
 end

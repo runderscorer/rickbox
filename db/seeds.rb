@@ -43,4 +43,4 @@ films = [
   }
 ]
 
-films.each {|film| Film.create(title: film[:title], rating: film[:rating], genre: film[:genre], available: true)}
+films.each {|film| Film.create(title: film[:title], rating: film[:rating], genre: film[:genre], available: true )}
