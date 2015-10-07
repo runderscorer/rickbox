@@ -32,7 +32,7 @@ class RentalsController < ApplicationController
     else
       flash[:error] = 'Woops! There was a problem with your return.'
     end
-    redirect_to films_path
+    redirect_to rentals_path
   end
   
   def current_rentals

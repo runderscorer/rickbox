@@ -8,11 +8,12 @@ class UsersController < ApplicationController
     user = User.new(user_params)
 
     if user.save
-      redirect_to films_path, notice: 'Signed in!'
+      session[:user_id] = user.id
+      redirect_to films_path, notice: 'Account created!'
     else
-      render 'new'
+      flash[:error] = 'Woops! There was a problem creating your account.'
+      redirect_to new_user_path
     end
-    
   end
 
   private
