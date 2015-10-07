@@ -25,15 +25,25 @@ input {
 }
 
 .notifications {
+  position: fixed;
+  width: 100%;
+  top: 52px;
   padding: .5em;
   font-size: 1.2em;
   color: white;
-  background-color: orange;
+  background-color: blueviolet;
   opacity: .7;
-  border-radius: 5px;
   text-align: center;
+}
+
+.notifications#error {
+  background-color: red;
 }
 
 .notifications:hover {
   cursor: pointer;
+}
+
+.navbar-default {
+  margin-bottom: 50px !important;
 }
