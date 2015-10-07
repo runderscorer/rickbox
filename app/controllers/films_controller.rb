@@ -1,7 +1,7 @@
 class FilmsController < ApplicationController
   
   def index
-    @films = Film.all
+    @films = Film.all.order('rating desc')
   end
 
   def sort_column

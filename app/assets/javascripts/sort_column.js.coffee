@@ -1,14 +1,14 @@
 jQuery ->
   ascending = true
-  $(document).on 'click', 'th', ->
-    $('th').removeClass()
+  $(document).on 'click', 'th.films', ->
+    $('th').attr('id', '')
     name = $(this).attr('name')
     if ascending == false
       ascending = true
-      $(this).addClass('asc')
+      $(this).attr('id', 'asc')
     else
       ascending = false
-      $(this).addClass('desc')
+      $(this).attr('id', 'desc')
     $.ajax(
       url: "/sort_column"
       type: "GET"

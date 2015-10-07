@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates :password, presence: true
   validates_confirmation_of :password
 
+  has_many :rentals
 
   def self.authenticate(email, password)
     user = User.find_by email: email

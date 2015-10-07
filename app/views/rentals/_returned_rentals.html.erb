@@ -1,0 +1,20 @@
+<h4 class='rentals'>Returned Rentals</h4>
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Genre</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% returned_rentals.each do |rental| %>
+    <tr>
+      <td><%= rental.film.title %></td>
+      <td><%= rental.film.rating %></td>
+      <td><%= rental.film.genre %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

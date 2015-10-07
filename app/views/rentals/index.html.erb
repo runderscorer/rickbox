@@ -1,21 +1,5 @@
 <h2>My Rentals</h2>
-<table class='table'>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Rating</th>
-      <th>Genre</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @rentals.each do |rental| %>
-    <tr>
-      <td><%= rental.film.title %></td>
-      <td><%= rental.film.rating %></td>
-      <td><%= rental.film.genre %></td>
-      <td><%= link_to 'Return', film_path(rental.film_id, film_id: rental.film_id, available: true), method: :put  %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+
+<%= render 'current_rentals' %>
+
+<%= render 'returned_rentals' %>

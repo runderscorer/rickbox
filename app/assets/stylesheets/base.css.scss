@@ -1,9 +1,9 @@
-th.asc::after {
+th#asc::after {
   content: ' (asc)';
   font-size: .8em;
 }
 
-th.desc::after {
+th#desc::after {
   content: ' (desc)';
   font-size: .8em;
 }
@@ -12,6 +12,10 @@ th {
   width: 25%;
 }
 
-th:hover {
+th.films:hover {
   cursor: pointer;
+}
+
+.rentals {
+  margin-top: 3em;
 }
