@@ -25,6 +25,9 @@
     </div>
   </nav>
   <div class='container'>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg %>
+    <% end %>
 
     <%= yield %>
 
