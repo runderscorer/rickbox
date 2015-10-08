@@ -1,3 +1,3 @@
 jQuery ->
   $(document).on 'click', '.notifications', ->
-    $(this).hide()
+    $(this).css('visibility', 'hidden')

@@ -20,14 +20,17 @@ input {
   margin-bottom: 1.5em !important;
 }
 
+.container:nth-child(2) {
+  margin-top: 41px !important;
+}
+
 .rentals {
   margin-top: 3em;
 }
 
 .notifications {
-  position: fixed;
+  display: fixed;
   width: 100%;
-  top: 52px;
   padding: .5em;
   font-size: 1.2em;
   color: white;
@@ -44,6 +47,6 @@ input {
   cursor: pointer;
 }
 
-.navbar-default {
-  margin-bottom: 50px !important;
+.navbar {
+  margin-bottom: 0 !important;
 }
